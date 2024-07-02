@@ -1,0 +1,36 @@
+---
+title: Welcome to Travelopia Docs
+description: Get started contributing on Travelopia Projects.
+template: splash
+hero:
+  tagline: Get started contributing on Travelopia Projects!
+  image:
+    file: ../../assets/images/travelopia-t-logo.svg
+  actions:
+    - text: Travelopia Guide
+      link: guides/example/
+      icon: right-arrow
+      variant: primary
+    - text: Read the docs
+      link: https://starlight.astro.build
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Next steps
+
+<CardGrid stagger>
+	<Card title="Get to know your manager" icon="starlight">
+		Edit `src/content/docs/index.mdx` to see this page change.
+	</Card>
+	<Card title="Reach out to your manager" icon="slack">
+		For all access to Slack, Jira, etc. and to get introduced to your ramp-up buddy.
+	</Card>
+	<Card title="Ramp-up Buddy" icon="rocket">
+		Your ramp-up buddy will help you get set up, and walk you through how we do things at Travelopia, and you very first ticket 🎟️
+	</Card>
+	<Card title="Go through all the sections" icon="open-book">
+		(This is important!) in this documentation carefully from top to bottom, and feel free to reach out if you feel like anything can be improved
+	</Card>
+</CardGrid>
