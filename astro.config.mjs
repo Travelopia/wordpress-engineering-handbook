@@ -27,6 +27,10 @@ export default defineConfig({
 					label: 'Pages',
 					autogenerate: { directory: 'pages' },
 				},
+				{
+					label: 'Engineering',
+					autogenerate: { directory: 'engineering' },
+				},
 			],
 		}),
 		tailwind({
