@@ -1,0 +1,61 @@
+---
+title: "Code Reviews"
+description: "This is a guide to code reviews."
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Code reviews are an important part of our engineering workflow. It ensures that at least one other set of eyes have looked at the code that is about to join the codebase.
+
+All code must be reviewed by another engineer. Please read the [PHP section (link to be added)](<#>) for back-end best practices.
+
+<Aside title="As an engineer, please remember:">
+  “It is my responsibility to review my own code before passing on to the reviewer, in a way that I expect no feedback at all“
+</Aside>
+
+
+
+### Types of reviews
+There are two “parts” to a code review:
+
+1. Review of the code itself: Checking if the code appears to be functional
+    - ✅ Easier to review
+
+2. Deeper review of the code’s implications
+    - ❌ Harder to review
+
+### How to review code’s implications
+When sending a PR for code review, both the engineer and the reviewer can ask themselves:
+
+1. Does the code appear to solve the issue mentioned in the ticket?
+
+2. Is the code complete? If not, has the engineer mentioned that in the Jira ticket?
+
+3. Is this the absolute best / gold standard work we can produce, given all the knowledge we currently have?
+
+4. Think about this very deeply: Are there other approaches that we could take that would make this more scalable or performant?
+
+5. Can we do anything else to improve the usability of this code - both in the front-end and back-end?
+
+6. Will this code affect any other functionality on this site?
+
+7. What can we do to make this code more robust? Can we write tests for this?
+
+8. How can we help our future selves and other new engineers understand and maintain this new code? Should we write more helpful comments? Should we rename our functions or variables, or refactor in a way that is more helpful?
+
+### Things to look for
+###### Frontend/ Backend
+1. Does the code belong there or is it a better place where it can be added ( for example if it can be tested ).
+
+2. Is the variable name meaningful and best describes what it’s used for? ( should not use abbreviations ).
+
+###### Frontend
+1. Is the SVG optimized?
+
+2. Check if CSS variable should have been used for a value such as box-shadow.
+
+3. Check if existing CSS Class such as grid, could have been used, if applicable.
+
+4. Check if escaping is done using x-escape, x-content etc.
+
+5. Check if margins are used appropriately ( e.g. margin top is preferred over margin bottom, so if the element is removed it goes its its margin )
